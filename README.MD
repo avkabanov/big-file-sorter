@@ -42,7 +42,7 @@ flags: "-q --console=plain" hides gradle build status from console that interfer
 ### input parameters
 Application can be started with two parameters: filepath to source file, and filepath to destination file. 
 
-#### example of start application
+### example of start application
 ```
 gradlew runApplication -q --console=plain --args="source.txt destination.txt"
 ```
