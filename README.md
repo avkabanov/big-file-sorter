@@ -56,3 +56,6 @@ Generator receives three parameters:
  - path to generated file
  - number of lines to generate
  - max line length  
+
+###example of start generator
+gradlew runGenerator -q --console=plain --args="destination.txt 1000 500"
