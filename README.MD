@@ -4,12 +4,8 @@
 Application sorts all lines in a big file, assuming file size is big enough that can not be fully loaded into the  
 memory. Required memory size should not depend of file size. 
 
-In addition it's required to develop file generator, that generates file with a given number of lines and given
-maximum line length.
-
 ### Assumption
-Every line of a given file can be fully loaded into memory.
-                                                                                                  
+Every line of a given file can be fully loaded into memory.                                                                                         
 
 ## Technology and algorithm overview 
 In this assignment I used Guice: a lightweight DI framework from google. 
@@ -48,21 +44,4 @@ Application can be started with two parameters: filepath to source file, and fil
 ### example of start application
 ```
 gradlew runApplication -q --console=plain --args="source.txt destination.txt"
-```
-
-## How to run file generator
-Generator can be started with a single command: gradlew runGenerator -q --console=plain
-
-### note
-since generator is used for testing only - validation of input parameters has been omitted
-
-### input parameters 
-Generator receives three parameters:
- - path to generated file
- - number of lines to generate
- - max line length  
-
-### example of start generator
-```
-gradlew runGenerator -q --console=plain --args="destination.txt 1000 500"
 ```
