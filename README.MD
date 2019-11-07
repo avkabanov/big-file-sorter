@@ -32,7 +32,7 @@ should not depend on filesize.
 Value N is read from app.properties file. However, MaxNumbersToLoadResolver is used through interface and implementation can be changed in any moment
 
 ### Abstraction
-DataSorter supports abstraction T as datasource and D as data type that is obtained from datasource. For example, in prod we read lines from file, meanwhile for test purpose we read int from arrayList    
+DataSorter supports abstraction T as datasource and D as data type that is read from datasource. For example, in prod we read lines from file, meanwhile for test purpose we read int from arrayList    
  
 ## How to run file sorter
 Application can be started with a single command: gradlew runApplication -q --console=plain
